@@ -74,6 +74,9 @@ def cae_ciph():
         interactive_shell_help()
         run_interactive_shell()
         return 0
+    elif sys.argv[1] == "help":
+        help()
+        return 0
     elif len(sys.argv) == 2:
         print(encrypt(sys.argv[1], 1))
         return 1
